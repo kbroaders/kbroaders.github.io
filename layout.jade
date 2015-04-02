@@ -1,0 +1,15 @@
+doctype html
+html.no-js(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		block title
+		link(rel='stylesheet', href='stylesheets/app.css')
+		link(rel='icon', type='image/x-icon', href='favicon.ico')
+		link(rel='author', type='text/plain', href='humans.txt')
+		script(src='js/modernizr.min.js')
+	body
+		block vars
+		include NavBar
+		block content
+		script(src='js/app.min.js')

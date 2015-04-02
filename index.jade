@@ -1,0 +1,38 @@
+extends layout
+
+block vars
+	-var pageid = "home"
+
+block title
+	title Broaders Lab!
+	meta(name='description',content='Official lab website for Kyle Broaders and his lab at Mount Holyoke College in western MA.')
+
+block content
+	.row
+		.large-12.columns
+			.panel
+				h4 Welcome to the Broaders lab!
+				ul.example-orbit(data-orbit='data-orbit', data-options='	bullets:false;timer:false;slide_number:false;')
+					li
+						img(src='images/orbit1.jpg', alt='slide 1')
+						.orbit-caption Dextran-based degradable nanoparticles for protein delivery
+					li
+						img(src='images/orbit2.jpg', alt='slide 2')
+						.orbit-caption Immunofluorescently stained mammalian cells grown on 3D shapes.
+					li
+						img(src='images/orbit3.jpg', alt='slide 3')
+						.orbit-caption Contact angles between cells indicate strength of cohesion.
+				hr
+				h4 News
+				.row
+					.medium-11.medium-centered.columns
+						table.newslist
+							tr
+								td Jan.&nbsp;'14
+								td Kyle is selected as the first recipient of the Mount Holyoke College Fund the Future Award!  
+							tr
+								td Sep.&nbsp;'14
+								td First equipment purchased and assembled! The lab #[a(href="http://b9creator.com", target="_blank") 3D printer] awaits its first test run.
+							tr
+								td July&nbsp;'14
+								td Ribbon cutting ceremony for Broaders Lab! (In reality, this involved making sure the doors worked and then  dumping some boxes on the counter).

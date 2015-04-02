@@ -1,0 +1,72 @@
+.logowrapper
+	if pageid == "home"
+		a.homelogo.disabled
+			img(data-interchange='[images/Title-small.png, (small)], [images/Title-medium.png, (medium)], [images/Title-large.png, (large)]')
+	else
+		a.homelogo(href='index.html')
+			img(data-interchange='[images/Title-small.png, (small)], [images/Title-medium.png, (medium)], [images/Title-large.png, (large)]')
+
+.row
+	.large-12.columns
+		.show-for-medium-up
+			ul.button-group.even-4.radius
+				li
+					if pageid == "research"
+						a.small.navbutton.disabled
+							.bigletter Re
+							| Research
+					else
+						a.small.navbutton(href='research.html')
+							.bigletter Re
+							| Research
+				li
+					if pageid == "publications"
+						a.small.navbutton.disabled
+							.bigletter Pb
+							| Publications
+					else
+						a.small.navbutton(href='publications.html')
+							.bigletter Pb
+							| Publications
+				li
+					if pageid == "people"
+						a.small.navbutton.disabled
+							.bigletter La
+							| Lab Members
+					else
+						a.small.navbutton(href='people.html')
+							.bigletter La
+							| Lab Members
+				li
+					if pageid == "kb"
+						a.small.navbutton.disabled
+							.bigletter Br
+							| Kyle Broaders
+					else
+						a.small.navbutton(href='kb.html')
+							.bigletter Br
+							| Kyle Broaders
+
+		.hide-for-medium-up
+			ul.button-group.even-4
+				
+				li
+					if pageid == "research"
+						a.tiny.button.disabled Research
+					else
+						a.tiny.button(href='research.html') Research
+				li
+					if pageid == "publications"
+						a.tiny.button.disabled Publications
+					else
+						a.tiny.button(href='publications.html') Publications
+				li
+					if pageid == "people"
+						a.tiny.button.disabled Members
+					else
+						a.tiny.button(href='people.html') Members
+				li
+					if pageid == "kb"
+						a.tiny.button.disabled K.&nbsp;Broaders
+					else
+						a.tiny.button(href='kb.html') K.&nbsp;Broaders

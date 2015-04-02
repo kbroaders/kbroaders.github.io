@@ -1,0 +1,205 @@
+@import "settings";
+//@import "foundation";
+
+// Or selectively include components
+ @import
+   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+   "foundation/components/button-groups",
+   "foundation/components/buttons",
+   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+   "foundation/components/grid",
+   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+   "foundation/components/orbit",
+//   "foundation/components/pagination",
+   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+   "foundation/components/type",
+//   "foundation/components/offcanvas",
+   "foundation/components/visibility";
+
+.orbit-prev, .orbit-next {
+   display: block;
+}
+
+.fullwidth{
+	padding:0px;
+}
+
+$disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
+
+
+
+.navbutton{
+	@include button(rem-calc(12),$primary-color,0,true,false,false);
+}
+.navbutton.disabled{
+  cursor: $button-disabled-cursor;
+  opacity: 1;
+	background-color:$disabled-navcolor;
+  box-shadow: none;
+  &:hover,
+  &:focus { background-color: $disabled-navcolor; }
+}
+
+.button.tiny{
+	padding:rem-calc(10);
+}
+
+.disabled:hover{
+	cursor:default;
+}
+
+.disabled.homelogo{
+	opacity:1;
+}
+
+
+.logowrapper{
+	text-align:center;
+	margin-bottom:-2rem;
+}
+
+.newslist{
+	width:100%;
+	td {
+		color:$panel-font-color;
+		&:nth-child(even){
+			border-left:thin $hr-border-color solid;
+		}
+	}
+}
+
+.publist{
+	color:$panel-font-color;
+	margin-left:2rem;
+	margin-top:1rem;
+	li {
+		line-height:1.2rem;
+		text-align:justified;
+	}
+}
+
+.toc{
+	display:block;
+	margin:0.7rem 0 1rem 0;
+	padding-bottom:1rem;
+	text-align:center;
+	border-bottom:thin $hr-border-color solid;
+	
+	&:last-child{
+		border-bottom:none;
+	}
+}
+
+.headshot{
+	text-align:center;
+	
+	img {
+		max-height:250px;
+		margin-bottom:1rem;
+	}
+}
+
+#kb{
+	width:15rem;
+	float:left;
+}
+
+#kbname{
+	width: 20rem;
+	padding-left:1.5rem;
+	border-bottom:thin $hr-border-color solid;
+	height:2rem;
+	margin-bottom:1rem;
+	margin-left:1.5rem;
+}
+
+.panel .vcard{
+	color:$panel-font-color;
+
+}
+
+
+.vcard{
+	padding:0;
+	margin-bottom:0.5rem;
+	margin-top:0rem;
+	margin-left:1rem;
+	td {
+		text-align:center;
+		height:$paragraph-line-height*.8;
+		padding:2px 5px;
+		font-size:$paragraph-font-size*0.8;
+		line-height:$paragraph-line-height*.8;
+	}
+}
+
+.tcard{
+	@extend .vcard;	
+	margin-top:0.25rem;
+	margin-left:0rem;
+	td{
+		text-align:left;
+	}
+	tr:first-child>td{
+		border-bottom:solid 1px black;
+		padding-bottom:0px;
+		font-weight:bold;
+	};
+}
+
+.accordion-navigation-research  {
+    @include accordion-navigation;
+		padding-bottom:0.5rem;
+		a {
+			padding:0.4rem !important;
+		}
+}
+
+.fig{
+	display:block;
+	margin:0 auto 0 auto;
+}
+
+.desc{
+	text-align:justify;
+	font-size:rem-calc(15);
+}
+
+.biolist .panel{
+	margin-bottom:0.9rem;
+}
+
+
+.bigletter{
+	font-size:4rem;
+	line-height:3rem;
+	font-family:Garamond,Serif;
+}
+
+
+dd.accordion-navigation{
+	padding-bottom:1rem;
+}
