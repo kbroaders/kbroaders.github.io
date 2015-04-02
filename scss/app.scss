@@ -203,3 +203,9 @@ $disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
 dd.accordion-navigation{
 	padding-bottom:1rem;
 }
+
+.resimg{
+	@extend .medium-only-text-center;
+	@media #{$large-up} { margin-top:2rem;}
+	margin-bottom:1.5rem;
+}
