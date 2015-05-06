@@ -49,8 +49,12 @@
 
 $disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
 
-
-
+.navgroup li:first-child{
+	margin-left:2px ;
+}
+.navgroup li:not(:first-child){
+	margin-left:-4px !important;
+}
 .navbutton{
 	@include button(rem-calc(12),$primary-color,0,true,false,false);
 }
@@ -208,4 +212,9 @@ dd.accordion-navigation{
 	@extend .medium-only-text-center;
 	@media #{$large-up} { margin-top:2rem;}
 	margin-bottom:1.5rem;
+}
+
+p {
+	line-height:1.4;
+	font-size:1rem;
 }
