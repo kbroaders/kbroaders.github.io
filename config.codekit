@@ -3720,6 +3720,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/dist\/images\/members\/long24j.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 928906,
+		"inputAbbreviatedPath": "\/dist\/images\/members\/long24j.jpg",
+		"outputAbbreviatedPath": "\/dist\/images\/members\/long24j.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/dist\/images\/members\/UnknownStudent.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
