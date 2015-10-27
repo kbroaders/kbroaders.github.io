@@ -218,3 +218,10 @@ p {
 	line-height:1.4;
 	font-size:1rem;
 }
+
+.footer{
+	text-align:center;
+	background:$panel-bg;
+	border: thin $hr-border-color solid;
+	line-height:2rem;
+}
