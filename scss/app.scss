@@ -174,12 +174,37 @@ $disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
 	};
 }
 
+dd.accordion-navigation{
+	padding-bottom:1rem;
+}
+
+.accordion-navigation {
+  >a:after {
+    content: "▶";
+    padding-right: 5px;
+    float: left;
+  }
+  &.active > a:after {
+    content: "▼";
+  }
+}
+
 .accordion-navigation-research  {
     @include accordion-navigation;
 		padding-bottom:0.5rem;
 		a {
 			padding:0.4rem !important;
 		}
+
+	  >a:after {
+	    content: "▶";
+	    padding-right: 5px;
+	    float: left;
+	  }
+	  &.active > a:after {
+	    content: "▼";
+	  }
+		
 }
 
 .fig{
@@ -201,11 +226,6 @@ $disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
 	font-size:4rem;
 	line-height:3rem;
 	font-family:Garamond,Serif;
-}
-
-
-dd.accordion-navigation{
-	padding-bottom:1rem;
 }
 
 .resimg{
