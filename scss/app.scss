@@ -240,8 +240,11 @@ p {
 }
 
 .footer{
+	@include button(rem-calc(12),$primary-color,0,true,false,false);
 	text-align:center;
-	background:$panel-bg;
 	border: thin $hr-border-color solid;
 	line-height:2rem;
+	a{
+		color:$white;
+	}
 }
