@@ -117,17 +117,17 @@
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+ $header-font-family: "Garamond","Times","Serif";
 // $header-font-weight: normal;
 // $header-font-style: normal;
 // $header-font-color: #222;
-// $header-line-height: 1.4;
-// $header-top-margin: .2rem;
-// $header-bottom-margin: .5rem;
+ $header-line-height: 1.2;
+ $header-top-margin: 2rem;
+// $header-bottom-margin: 0.1rem;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
+ $h1-font-size: 4.5rem;
 // $h2-font-size: rem-calc(37);
 // $h3-font-size: rem-calc(27);
 // $h4-font-size: rem-calc(23);
@@ -167,10 +167,10 @@
 // $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
-// $hr-border-width: 1px;
+ $hr-border-width: 2px;
 // $hr-border-style: solid;
-// $hr-border-color: #ddd;
-// $hr-margin: rem-calc(20);
+ $hr-border-color: #333;
+ $hr-margin: rem-calc(10);
 
 // We use these to style lists
 // $list-style-position: outside;
@@ -766,9 +766,10 @@
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
- $panel-bg: scale-color(#fff, $lightness: -3%);
+// $panel-bg: scale-color(#fff, $lightness: -1%);
+ $panel-bg: #fff;
 // $panel-border-style: solid;
-// $panel-border-size: 1px;
+// $panel-border-size: 2px;
 
 // We use this % to control how much we darken things on hover
 // $panel-function-factor: -11%;

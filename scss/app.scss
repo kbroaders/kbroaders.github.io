@@ -47,16 +47,23 @@
 	padding:0px;
 }
 
-$disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
+$navcolor:#fff;
+$disabled-navcolor:darken($navcolor,30%);
+//$disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
+.navgroup{
+	display:inline-block;
+}
 
 .navgroup li:first-child{
 	margin-left:2px ;
 }
 .navgroup li:not(:first-child){
-	margin-left:-4px !important;
+//	margin-left:-4px !important;
+	margin-left:1rem;
 }
 .navbutton{
-	@include button(rem-calc(12),$primary-color,0,true,false,false);
+	@include button(rem-calc(12),$navcolor,0,true,false,false);
+	border:thin $hr-border-color solid;
 }
 .navbutton.disabled{
   cursor: $button-disabled-cursor;
@@ -67,6 +74,10 @@ $disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
   &:focus { background-color: $disabled-navcolor; }
 }
 
+.navbottom{
+	padding-bottom:1rem;
+}
+
 .button.tiny{
 	padding:rem-calc(10);
 }
@@ -75,15 +86,22 @@ $disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
 	cursor:default;
 }
 
+.homelogo{
+	text-align:center;
+}
+
 .disabled.homelogo{
 	opacity:1;
 }
 
-
 .logowrapper{
-	text-align:center;
-	margin-bottom:-2rem;
+//	margin:auto;
+	text-align:left;
+//	width:80%;
+	margin-bottom:1rem;
 }
+
+.panel{border-color:black;}
 
 .newslist{
 	width:100%;
@@ -124,6 +142,7 @@ $disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
 		max-height:250px;
 		margin-bottom:1rem;
 	}
+
 }
 
 #kb{
@@ -150,15 +169,20 @@ $disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
 	padding:0;
 	margin-bottom:0.5rem;
 	margin-top:0rem;
-	margin-left:1rem;
+	margin-left:10%;
 	td {
-		text-align:center;
+		text-align:left;
 		height:$paragraph-line-height*.8;
 		padding:2px 5px;
 		font-size:$paragraph-font-size*0.8;
 		line-height:$paragraph-line-height*.8;
+		background-color:#fff;
 	}
+	border:none;
+	border-left:thin $hr-border-color solid;
 }
+
+h5{margin-top:0.5rem;}
 
 .tcard{
 	@extend .vcard;	
@@ -223,9 +247,10 @@ dd.accordion-navigation{
 
 
 .bigletter{
-	font-size:4rem;
+	font-size:3.75rem;
 	line-height:3rem;
 	font-family:Garamond,Serif;
+	margin:1rem 2rem 1rem 2rem;
 }
 
 .resimg{
@@ -240,7 +265,7 @@ p {
 }
 
 .footer{
-	@include button(rem-calc(12),$primary-color,0,true,false,false);
+	@include button(rem-calc(12),$navcolor,0,true,false,false);
 	text-align:center;
 	border: thin $hr-border-color solid;
 	line-height:2rem;

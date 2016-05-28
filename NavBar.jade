@@ -1,15 +1,20 @@
-.logowrapper
-	if pageid == "home"
-		a.homelogo.disabled
-			img(data-interchange='[images/Title-small.png, (small)], [images/Title-medium.png, (medium)], [images/Title-large.png, (large)]')
-	else
-		a.homelogo(href='index.html')
-			img(data-interchange='[images/Title-small.png, (small)], [images/Title-medium.png, (medium)], [images/Title-large.png, (large)]')
-
 .row
 	.large-12.columns
-		.show-for-medium-up
-			ul.button-group.even-4.radius.navgroup
+		.logowrapper
+			if pageid == "home"
+				.homelogo
+					a.disabled
+						h1 Broaders Lab
+			else
+				.homelogo
+					a(href='index.html')
+						h1 Broaders Lab
+		.navbottom
+			hr
+.row
+	.large-12.columns
+		.show-for-medium-up.text-center
+			ul.button-group.navgroup
 				li
 					if pageid == "research"
 						a.small.navbutton.disabled
