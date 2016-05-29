@@ -10,7 +10,10 @@ mixin listpubs(pubs)
 			br
 			|  !{pub["authors"]}. 
 			em #{pub["journal"]}
-			| , #{pub["datepage"]}.
+			| , #{pub["datepage"]}. 
+			| [
+			a(href="/pdf/"+(pubs.length-index)+".pdf", target="_blank") PDF
+			| ]
 			.toc
 				img(src="images/pubs/toc"+(pubs.length-index)+".gif", height="150")
 
