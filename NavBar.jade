@@ -4,11 +4,17 @@
 			if pageid == "home"
 				.homelogo
 					a.disabled
-						h1 Broaders Lab
+						.show-for-medium-up
+							h1 Broaders Lab
+						.hide-for-medium-up
+							h2 Broaders Lab
 			else
 				.homelogo
 					a(href='index.html')
-						h1 Broaders Lab
+						.show-for-medium-up
+							h1 Broaders Lab
+						.hide-for-medium-up
+							h2 Broaders Lab
 		.navbottom
 			hr
 .row
@@ -53,25 +59,25 @@
 							| Kyle Broaders
 
 		.hide-for-medium-up
-			ul.button-group.even-4.navgroup
+			ul.button-group.navgroup
 				
 				li
 					if pageid == "research"
-						a.tiny.button.disabled Research
+						a.tiny.navbutton.disabled Research
 					else
-						a.tiny.button(href='research.html') Research
+						a.tiny.navbutton(href='research.html') Research
 				li
 					if pageid == "publications"
-						a.tiny.button.disabled Publications
+						a.tiny.navbutton.disabled Papers
 					else
-						a.tiny.button(href='publications.html') Publications
+						a.tiny.navbutton(href='publications.html') Papers
 				li
 					if pageid == "people"
-						a.tiny.button.disabled Members
+						a.tiny.navbutton.disabled Lab
 					else
-						a.tiny.button(href='people.html') Members
+						a.tiny.navbutton(href='people.html') Lab
 				li
 					if pageid == "kb"
-						a.tiny.button.disabled K.&nbsp;Broaders
+						a.tiny.navbutton.disabled Broaders
 					else
-						a.tiny.button(href='kb.html') K.&nbsp;Broaders
+						a.tiny.navbutton(href='kb.html') Broaders

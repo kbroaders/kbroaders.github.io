@@ -51,20 +51,24 @@ $navcolor:#fff;
 $disabled-navcolor:darken($navcolor,30%);
 //$disabled-navcolor:desaturate(lighten($primary-color,20%),20%);
 .navgroup{
-	display:inline-block;
+//	display:inline-block;
+	text-align:center;
 }
 
 .navgroup li:first-child{
-	margin-left:2px ;
+	margin-left:1px ;
 }
 .navgroup li:not(:first-child){
 //	margin-left:-4px !important;
-	margin-left:1rem;
+	@media #{$medium-up} { margin-left:1rem;}
+	@media #{$small-only} { margin-left:0.1rem;}
 }
+
 .navbutton{
 	@include button(rem-calc(12),$navcolor,0,true,false,false);
 	border:thin $hr-border-color solid;
 }
+
 .navbutton.disabled{
   cursor: $button-disabled-cursor;
   opacity: 1;
@@ -78,8 +82,8 @@ $disabled-navcolor:darken($navcolor,30%);
 	padding-bottom:1rem;
 }
 
-.button.tiny{
-	padding:rem-calc(10);
+.navbutton.tiny{
+	padding:rem-calc(10) rem-calc(6);
 }
 
 .disabled:hover{
@@ -88,6 +92,17 @@ $disabled-navcolor:darken($navcolor,30%);
 
 .homelogo{
 	text-align:center;
+	a:hover:not(.disabled){
+		h1{
+			color:darken($disabled-navcolor,25%);
+	    transition: all 0.3s ease 0s;
+		}
+	}
+	a:not(.disabled){
+		h1{
+	    transition: all 0.5s ease 0s;
+		}
+	}
 }
 
 .disabled.homelogo{
@@ -151,12 +166,12 @@ $disabled-navcolor:darken($navcolor,30%);
 }
 
 #kbname{
-	width: 20rem;
-	padding-left:1.5rem;
+	width: 15rem;
+	padding-left:1rem;
 	border-bottom:thin $hr-border-color solid;
 	height:2rem;
 	margin-bottom:1rem;
-	margin-left:1.5rem;
+	margin-left:2rem;
 }
 
 .panel .vcard{
@@ -272,4 +287,11 @@ p {
 	a{
 		color:$white;
 	}
+}
+
+p,li,td{
+	a{
+	color:$body-font-color !important;
+	text-decoration:underline;}
+	
 }
