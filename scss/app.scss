@@ -82,6 +82,11 @@ $disabled-navcolor:darken($navcolor,30%);
 	padding-bottom:1rem;
 }
 
+.navimgbottom{
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+
 .navbutton.tiny{
 	padding:rem-calc(10) rem-calc(6);
 }
@@ -116,7 +121,7 @@ $disabled-navcolor:darken($navcolor,30%);
 	margin-bottom:1rem;
 }
 
-.panel{border-color:black;}
+.panel{border-color:$hr-border-color;}
 
 .newslist{
 	width:100%;
@@ -198,6 +203,15 @@ $disabled-navcolor:darken($navcolor,30%);
 }
 
 h5{margin-top:0.5rem;}
+#researchbox{
+	h4{
+		margin-top:1rem;
+	}
+	h3{
+		margin-top:0;
+		margin-bottom:1rem;
+	}
+}
 
 .tcard{
 	@extend .vcard;	
@@ -284,6 +298,7 @@ p {
 	text-align:center;
 	border: thin $hr-border-color solid;
 	line-height:2rem;
+	font-size:rem-calc(18);
 	a{
 		color:$white;
 	}
