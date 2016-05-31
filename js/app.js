@@ -2,8 +2,6 @@
 //@codekit-prepend "../bower_components/fastclick/lib/fastclick.js"
 //@codekit-prepend "../bower_components/foundation/js/foundation/foundation.js"
 //@codekit-prepend "../bower_components/foundation/js/foundation/foundation.accordion.js"
-//@codekit-prepend "../bower_components/foundation/js/foundation/foundation.interchange.js"
-//@codekit-prepend "../bower_components/foundation/js/foundation/foundation.orbit.js"
 
 $(document).foundation();
 
