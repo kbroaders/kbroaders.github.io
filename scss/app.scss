@@ -232,32 +232,18 @@ dd.accordion-navigation{
 }
 
 .accordion-navigation {
+	padding-bottom:0.5rem !important;
+	a {
+		padding:0.7rem !important;
+	}
   >a:after {
-    content: "▶";
+    content: url(/images/toggle-off.png);
     padding-right: 5px;
     float: left;
   }
   &.active > a:after {
-    content: "▼";
+    content: url(/images/toggle-on.png);
   }
-}
-
-.accordion-navigation-research  {
-    @include accordion-navigation;
-		padding-bottom:0.5rem;
-		a {
-			padding:0.4rem !important;
-		}
-
-	  >a:after {
-	    content: "▶";
-	    padding-right: 5px;
-	    float: left;
-	  }
-	  &.active > a:after {
-	    content: "▼";
-	  }
-		
 }
 
 .fig{
