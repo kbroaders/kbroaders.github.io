@@ -237,12 +237,12 @@ dd.accordion-navigation{
 		padding:0.7rem !important;
 	}
   >a:after {
-    content: url(/images/toggle-off.png);
+    content: url(toggle-off.png);
     padding-right: 5px;
     float: left;
   }
   &.active > a:after {
-    content: url(/images/toggle-on.png);
+    content: url(toggle-on.png);
   }
 }
 
