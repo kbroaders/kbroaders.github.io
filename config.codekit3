@@ -3262,14 +3262,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/dist\/images\/members\/Kate_Maziarz_v1.jpg": {
-		"ft": 16384,
-		"iS": 2790020,
-		"oA": 0,
-		"oAP": "\/dist\/images\/members\/Kate_Maziarz_v1.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/dist\/images\/members\/khich22m.jpg": {
 		"ft": 16384,
 		"iS": 7266,
@@ -3308,7 +3300,7 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/manas22a.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/dist\/images\/members\/map.jpg": {
 		"ft": 16384,
@@ -3324,7 +3316,7 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/mazia22k.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/dist\/images\/members\/norri22k.jpg": {
 		"ft": 16384,
