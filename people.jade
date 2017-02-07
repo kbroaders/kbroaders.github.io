@@ -1,5 +1,36 @@
 extends layout
 
+mixin listpeople(people)
+	each person in people
+		.panel.personbox
+			.columns.headshot
+				img(src= imgdir+person["email"]+'.jpg')
+			.columns.text-left
+				table.vcard
+					tr
+						td
+							h4 #{person["name"]}
+					tr
+						td Class of #{person["year"]}
+					each major in person["majors"]
+						tr
+							td Major: #{major}
+					if person["minors"]
+						each minor in person["minors"]
+							tr
+								td Minor: #{minor}
+					if person["nexus"]
+						each nexus in person["nexus"]
+							tr
+								td Nexus: #{nexus}
+					if person["current"]
+						tr
+							td Currently: #{person["current"]}
+					tr
+						td 
+							a(href='mailto:'+person["email"]+'@mtholyoke.edu') #{person["email"]}@mtholyoke.edu
+
+
 
 block vars
 	-var pageid = "people"
@@ -9,152 +40,79 @@ block title
 	meta(name='description',content='Members, past and present, of the Broaders lab.')
 
 block content
+	-var currentpeople = [{"email":"ooi22y"}]
+	-currentpeople[0].name = "Annabelle Ooi"
+	-currentpeople[0].year = "2017"
+	-currentpeople[0].majors = ["Biology"]
+	-currentpeople[0].minors = ["Chemistry"]
+	
+	-currentpeople.push({"email":"malik26a"})
+	-currentpeople[1].name = "Aiza Malik"
+	-currentpeople[1].year = "2018"
+	-currentpeople[1].majors = ["Biochemistry"]
+	
+	-currentpeople.push({"email":"graha22e"})
+	-currentpeople[2].name = "Emily Graham"
+	-currentpeople[2].year = "2019"
+	-currentpeople[2].majors = ["Chemistry"]
+	-currentpeople[2].nexus = ["Engineering"]
+	
+	-currentpeople.push({"email":"kum22y"})
+	-currentpeople[3].name = "Yeonsoo Kum"
+	-currentpeople[3].year = "2019"
+	-currentpeople[3].majors = ["Chemistry"]
+	-currentpeople[3].nexus = ["Biology"]
+	
+	-currentpeople.push({"email":"yigza22b"})
+	-currentpeople[4].name = "Beth Yigzaw"
+	-currentpeople[4].year = "2019"
+	-currentpeople[4].majors = ["Biochemistry"]
+	
+	-currentpeople.push({"email":"mazia22k"})
+	-currentpeople[5].name = "Kate Maziarz"
+	-currentpeople[5].year = "2019"
+	-currentpeople[5].majors = ["Chemistry"]
+	
+	-currentpeople.push({"email":"manas22a"})
+	-currentpeople[6].name = "Amanda Manaster"
+	-currentpeople[6].year = "2019"
+	-currentpeople[6].majors = ["Biochemistry"]
+	
+	-var pastpeople = [{"email":"khich22m"}]
+	-pastpeople[0].name = "Areeb Khichi"
+	-pastpeople[0].year = "2018"
+	-pastpeople[0].majors = ["Chemistry"]
+	-pastpeople[0].minors = ["Mathematics"]
+	
+	-pastpeople.push({"email":"norri22k"})
+	-pastpeople[1].name = "Kristyn Norris"
+	-pastpeople[1].year = "2016"
+	-pastpeople[1].majors = ["Biochemistry"]
+	-pastpeople[1].current = "Ph.D. Student at UMass Worcester"
+	
+	-pastpeople.push({"email":"long24j"})
+	-pastpeople[2].name = "Jackie Long"
+	-pastpeople[2].year = "2016"
+	-pastpeople[2].majors = ["Biochemistry"]
+	-pastpeople[2].minors = ["Statistics"]
+	-pastpeople[2].current = "Medical student"
+	
+	
 	-var imgdir = "images/members/"
 	.row
 		.large-12.columns.biolist
-
 			dl.accordion(data-accordion="")
 				dd.accordion-navigation.active
 					a(href="#panel1") Current Members
 					#panel1.content.active(style="display:block")
-										
-						.panel.radius
-							.row
-								.headshot.medium-4.medium-push-8.columns
-									img(src= imgdir+'ooi22y.jpg')
-								.medium-8.medium-pull-4.columns
-									h4 Annabelle Ooi
-									p Annabelle hails from Kuala Lumpur, Malaysia. She is interested in using both biochemical and molecular genetics approaches to study the biological basis of cellular interaction.
-									table.vcard
-										tr
-											td Class of 2017
-										tr
-											td Major: Biology
-										tr
-											td Minor: Chemistry
-										tr
-											td 
-												a(href='mailto:ooi22y@mtholyoke.edu') ooi22y@mtholyoke.edu
-
-						.panel.radius
-							.row
-								.headshot.medium-4.medium-push-8.columns
-									img(src= imgdir+'malik26a.jpg')
-								.medium-8.medium-pull-4.columns
-									h4 Aiza Malik
-									p Having lived in different cities in Pakistan Aiza is now settled in Rawalpindi - sister city to the capital. She's fascinated by the systematic dissection of anything whether it's sociology or chemistry but is particularly interested in the interaction between material properties and life.
-									table.vcard
-										tr
-											td Class of 2018
-										tr
-											td Major: Chemistry
-										tr
-											td Major: Biology
-										tr
-											td 
-												a(href='mailto:malik26a@mtholyoke.edu') malik26a@mtholyoke.edu
-										
-						.panel.radius
-							.row
-								.headshot.medium-4.medium-push-8.columns
-									img(src= imgdir+'graha22e.jpg')
-								.medium-8.medium-pull-4.columns
-									h4 Emily Graham
-									p Emily is from Salt Lake City, Utah. She is interested in the design and synthesis of chemical materials and the relationship of these with biological functions.
-									table.vcard
-										tr
-											td Class of 2019
-										tr
-											td Major: Chemistry
-										tr
-											td Nexus: Engineering
-										tr
-											td 
-												a(href='mailto:graha22e@mtholyoke.edu') graha22e@mtholyoke.edu
-
-						.panel.radius
-							.row
-								.headshot.medium-4.medium-push-8.columns
-									img(src= imgdir+'kum22y.jpg')
-								.medium-8.medium-pull-4.columns
-									h4 Yeonsoo Kum
-									p Yeonsoo was born in Seoul, South Korea, and moved to Tenafly, NJ. She is interested in synthesizing organic molecules via biochemical methods and understanding the synthesis in molecular level. 
-									table.vcard
-										tr
-											td Class of 2019
-										tr
-											td Major: Chemistry
-										tr
-											td Minor: Biology
-										tr
-											td 
-												a(href='mailto:kum22y@mtholyoke.edu') kum22y@mtholyoke.edu
-												
-						.panel.radius
-							.row
-								.headshot.medium-4.medium-push-8.columns
-									img(src= imgdir+'yigza22b.jpg')
-								.medium-8.medium-pull-4.columns
-									h4 Beth Yigzaw
-									p Beth is originally from Ethiopia and currently calls DC area home. She's fascinated by the effects of newly synthesized molecules on animal cells.
-									table.vcard
-										tr
-											td Class of 2019
-										tr
-											td Major: Biochemistry
-										tr
-											td 
-												a(href='mailto:yigza22b@mtholyoke.edu') yigza22b@mtholyoke.edu
-
+						
+						+listpeople(currentpeople)
 
 				dd.accordion-navigation
 					a(href="#panel2") Past Members
 					#panel2.content
-
-						.panel.radius
-							.row
-								.headshot.medium-4.medium-push-8.columns
-									img(src= imgdir+'khich22m.jpg')
-								.medium-8.medium-pull-4.columns
-									h4 Muhammadaha Areeb Khichi
-									p Areeb is currently working in the Rotello lab at UMass Amherst.
-									table.vcard
-										tr
-											td Class of 2018
-										tr
-											td Major: Chemistry
-										tr
-											td Minor: Mathematics
-
-						.panel.radius
-							.row
-								.headshot.medium-4.medium-push-8.columns
-									img(src= imgdir+'norri22k.jpg')
-								.medium-8.medium-pull-4.columns
-									h4 Kristyn Norris
-									p Kristyn is currently a graduate student in the immunology program at UMass Worcester.
-									table.vcard
-										tr
-											td Class of 2016
-										tr
-											td Major: Biochemistry
-
-
-
-						.panel.radius
-							.row
-								.headshot.medium-4.medium-push-8.columns
-									img(src= imgdir+'long24j.jpg')
-								.medium-8.medium-pull-4.columns
-									h4 Jackie Long
-									p 
-									table.vcard
-										tr
-											td Class of 2016
-										tr
-											td Major: Biochemistry
-										tr
-											td Minor: Statistics
+						.pastpeople
+							+listpeople(pastpeople)
 
 				.row
 					.large-12.columns

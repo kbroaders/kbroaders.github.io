@@ -257,7 +257,7 @@ dd.accordion-navigation{
 }
 
 .biolist .panel{
-	margin-bottom:0.9rem;
+	padding:1rem .25rem;
 }
 
 
@@ -297,6 +297,29 @@ p,li,td{
 	
 }
 
+h4 {margin-top:0;}
+.personbox{
+	display:inline-block;
+	max-width:300px;
+	margin:auto .25rem;
+	min-height:440px;
+}
+.pastpeople .personbox{
+	min-height:475px;
+}
+
+.headshot img{
+	display:block;
+	margin:auto;
+	margin-bottom:.5rem;
+	height:250px;
+}
+
+.vcard{
+	border:none;
+
+}
 #membermap{
 	margin-bottom:1rem;
 }
+#panel1{text-align:center;}
