@@ -7,7 +7,7 @@
 		"uuidString": "2C147CC7-9964-4B4A-B6C9-FC2ED55023C9"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "25849",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -2745,7 +2745,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/media\/Modernizr 2 Logo.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/media\/Modernizr 2 Logo.svg": {
 		"ft": 2097152,
@@ -2802,7 +2805,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/alpha.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/apng_test.png": {
 		"ft": 32768,
@@ -2810,7 +2816,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/apng_test.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/before-after.png": {
 		"ft": 32768,
@@ -2818,7 +2827,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/before-after.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/form_validation.html": {
 		"ft": 8192,
@@ -2841,7 +2853,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/green5x5.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/hashchange.html": {
 		"ft": 8192,
@@ -2870,7 +2885,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/mathml_ref.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/modernizr-1.7.min.js": {
 		"ft": 64,
@@ -2887,7 +2905,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/png_alpha_result.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/pushstate.html": {
 		"ft": 8192,
@@ -2901,7 +2922,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/red30x30.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/ruby.png": {
 		"ft": 32768,
@@ -2909,7 +2933,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/ruby.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/stroked-text.png": {
 		"ft": 32768,
@@ -2917,7 +2944,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/stroked-text.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/style.css": {
 		"aP": 1,
@@ -2935,7 +2965,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/svg-html-blur.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/svg-img.svg": {
 		"ft": 2097152,
@@ -2959,7 +2992,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/svg_blur.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/table.png": {
 		"ft": 32768,
@@ -2967,7 +3003,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/table.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow1.png": {
 		"ft": 32768,
@@ -2975,7 +3014,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow1.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow2.png": {
 		"ft": 32768,
@@ -2983,7 +3025,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow2.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.eot": {
 		"ft": 8192,
@@ -3025,7 +3070,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/windsong_font.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/xhtml.html": {
 		"ft": 8192,
@@ -3172,7 +3220,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/cycle.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/cycleSmall.jpg": {
 		"ft": 16384,
@@ -3180,7 +3230,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/cycleSmall.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/kb\/AcDex.png": {
 		"ft": 32768,
@@ -3188,7 +3240,10 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/kb\/AcDex.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/dist\/images\/kb\/atropisomers.gif": {
 		"ft": 4194304,
@@ -3204,7 +3259,10 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/kb\/capsules.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/dist\/images\/kb\/KB.jpg": {
 		"ft": 16384,
@@ -3212,7 +3270,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/kb\/KB.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/kb\/OxiDex.png": {
 		"ft": 32768,
@@ -3220,7 +3280,10 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/kb\/OxiDex.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/dist\/images\/kb\/syntheticpolarization.png": {
 		"ft": 32768,
@@ -3228,7 +3291,10 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/kb\/syntheticpolarization.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/dist\/images\/kb\/topography.png": {
 		"ft": 32768,
@@ -3236,7 +3302,10 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/kb\/topography.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/dist\/images\/kb\/topography_bkp.png": {
 		"ft": 32768,
@@ -3244,7 +3313,10 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/kb\/topography_bkp.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/dist\/images\/members\/graha22e.jpg": {
 		"ft": 16384,
@@ -3252,7 +3324,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/graha22e.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/members\/IMG_1852 (1).jpg": {
 		"ft": 16384,
@@ -3260,7 +3334,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/IMG_1852 (1).jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/members\/khich22m.jpg": {
 		"ft": 16384,
@@ -3268,7 +3344,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/khich22m.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/members\/kum22y.jpg": {
 		"ft": 16384,
@@ -3276,7 +3354,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/kum22y.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/members\/long24j.jpg": {
 		"ft": 16384,
@@ -3284,7 +3364,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/long24j.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/members\/malik26a.jpg": {
 		"ft": 16384,
@@ -3292,7 +3374,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/malik26a.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/members\/manas22a.jpg": {
 		"ft": 16384,
@@ -3300,7 +3384,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/manas22a.jpg",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"\/dist\/images\/members\/map.jpg": {
 		"ft": 16384,
@@ -3308,7 +3394,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/map.jpg",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"\/dist\/images\/members\/mazia22k.jpg": {
 		"ft": 16384,
@@ -3316,7 +3404,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/mazia22k.jpg",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"\/dist\/images\/members\/norri22k.jpg": {
 		"ft": 16384,
@@ -3324,7 +3414,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/norri22k.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/members\/ooi22y.jpg": {
 		"ft": 16384,
@@ -3332,7 +3424,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/ooi22y.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/members\/UnknownStudent.jpg": {
 		"ft": 16384,
@@ -3340,7 +3434,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/UnknownStudent.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/members\/yigza22b.jpg": {
 		"ft": 16384,
@@ -3348,7 +3444,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/members\/yigza22b.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/orbit1.jpg": {
 		"ft": 16384,
@@ -3356,7 +3454,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/orbit1.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/orbit2.jpg": {
 		"ft": 16384,
@@ -3364,7 +3464,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/orbit2.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/orbit3.jpg": {
 		"ft": 16384,
@@ -3372,7 +3474,9 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/orbit3.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/dist\/images\/pubs\/toc1.gif": {
 		"ft": 4194304,
@@ -3428,7 +3532,10 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/pubs\/toc14.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/dist\/images\/pubs\/toc2.gif": {
 		"ft": 4194304,
@@ -3500,7 +3607,10 @@
 		"oA": 0,
 		"oAP": "\/dist\/images\/res\/multicellularity.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/dist\/index.html": {
 		"ft": 8192,
@@ -3668,7 +3778,10 @@
 		"oA": 0,
 		"oAP": "\/dist\/stylesheets\/toggle-off.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/dist\/stylesheets\/toggle-on.png": {
 		"ft": 32768,
@@ -3676,7 +3789,10 @@
 		"oA": 0,
 		"oAP": "\/dist\/stylesheets\/toggle-on.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/index.html": {
 		"ft": 8192,
@@ -3863,7 +3979,10 @@
 		"oA": 0,
 		"oAP": "\/unused\/Title-large.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/unused\/Title-medium.png": {
 		"ft": 32768,
@@ -3871,7 +3990,10 @@
 		"oA": 0,
 		"oAP": "\/unused\/Title-medium.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/unused\/Title-small.png": {
 		"ft": 32768,
@@ -3879,7 +4001,10 @@
 		"oA": 0,
 		"oAP": "\/unused\/Title-small.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		}
 	},
 "hooks": [
@@ -4562,6 +4687,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -4762,6 +4891,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -4839,6 +4972,10 @@
 			"optionString": ""
 			},
 		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -5038,6 +5175,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
 		"object-curly-newline": {
 			"active": 0,
 			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
@@ -5089,6 +5230,10 @@
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -5183,6 +5328,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
@@ -5629,7 +5778,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -5652,14 +5802,6 @@
 		"autoOutputPathStyle": 0,
 		"orderOutput": 0,
 		"outputStyle": 1
-		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
@@ -5722,7 +5864,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -5807,6 +5951,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
