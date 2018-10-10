@@ -149,7 +149,7 @@ $disabled-navcolor:darken($navcolor,30%);
 	padding-bottom:1rem;
 	text-align:center;
 	border-bottom:thin $hr-border-color solid;
-	
+
 	&:last-child{
 		border-bottom:none;
 	}
@@ -157,7 +157,7 @@ $disabled-navcolor:darken($navcolor,30%);
 
 .headshot{
 	text-align:center;
-	
+
 	img {
 		max-height:250px;
 		margin-bottom:1rem;
@@ -214,7 +214,7 @@ h5{margin-top:0.5rem;}
 }
 
 .tcard{
-	@extend .vcard;	
+	@extend .vcard;
 	margin-top:0.25rem;
 	margin-left:0rem;
 	td{
@@ -280,7 +280,7 @@ p {
 }
 
 .footer{
-	@include button(rem-calc(12),$navcolor,0,true,false,false);
+	@include button(rem-calc(12),$primary-color,0,true,false,false);
 	text-align:center;
 	border: thin $hr-border-color solid;
 	line-height:2rem;
@@ -295,7 +295,7 @@ p,li,td{
 	a{
 	color:$body-font-color !important;
 	text-decoration:underline;}
-	
+
 }
 
 h4 {margin-top:0;}

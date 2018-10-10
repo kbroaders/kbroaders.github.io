@@ -40,53 +40,33 @@ block title
 	meta(name='description',content='Members, past and present, of the Broaders lab.')
 
 block content
-	-var currentpeople = [{"email":"malik26a"}]
-	-currentpeople[0].name = "Aiza Malik"
-	-currentpeople[0].year = "2018"
-	-currentpeople[0].majors = ["Biochemistry"]
+	-var currentpeople = []
 	
 	-currentpeople.push({"email":"graha22e"})
-	-currentpeople[1].name = "Emily Graham"
-	-currentpeople[1].year = "2019"
-	-currentpeople[1].majors = ["Chemistry"]
-	-currentpeople[1].nexus = ["Engineering"]
-	
-	-currentpeople.push({"email":"kum22y"})
-	-currentpeople[2].name = "Yeonsoo Kum"
-	-currentpeople[2].year = "2019"
-	-currentpeople[2].majors = ["Chemistry"]
-	-currentpeople[2].minors = ["Biology"]
-	
-	-currentpeople.push({"email":"yigza22b"})
-	-currentpeople[3].name = "Beth Yigzaw"
-	-currentpeople[3].year = "2019"
-	-currentpeople[3].majors = ["Biochemistry"]
+	-currentpeople[0].name = "Emily Graham"
+	-currentpeople[0].year = "2019"
+	-currentpeople[0].majors = ["Chemistry"]
+	-currentpeople[0].nexus = ["Engineering"]
 	
 	-currentpeople.push({"email":"mazia22k"})
-	-currentpeople[4].name = "Kate Maziarz"
-	-currentpeople[4].year = "2018"
-	-currentpeople[4].majors = ["Chemistry"]
+	-currentpeople[1].name = "Kate Maziarz"
+	-currentpeople[1].year = "2018"
+	-currentpeople[1].majors = ["Chemistry"]
 	
 	-currentpeople.push({"email":"manas22a"})
-	-currentpeople[5].name = "Amanda Manaster"
-	-currentpeople[5].year = "2019"
-	-currentpeople[5].majors = ["Biochemistry"]
-	
-	-currentpeople.push({"email":"yan22v"})
-	-currentpeople[6].name = "Victoria Yan"
-	-currentpeople[6].year = "2019"
-	-currentpeople[6].majors = ["Chemistry"]
-	-currentpeople[6].minors = ["Philosophy"]
+	-currentpeople[2].name = "Amanda Manaster"
+	-currentpeople[2].year = "2019"
+	-currentpeople[2].majors = ["Biochemistry"]
 
 	-currentpeople.push({"email":"peabo22c"})
-	-currentpeople[7].name = "Catherine Peabody"
-	-currentpeople[7].year = "2020"
-	-currentpeople[7].majors = ["Biology","East Asian Studies"]
+	-currentpeople[3].name = "Catherine Peabody"
+	-currentpeople[3].year = "2020"
+	-currentpeople[3].majors = ["Biology","East Asian Studies"]
 
 	-currentpeople.push({"email":"yang36x"})
-	-currentpeople[8].name = "Xueyi (Sherry) Yang"
-	-currentpeople[8].year = "2020"
-	-currentpeople[8].majors = ["Biochemistry"]
+	-currentpeople[4].name = "Xueyi (Sherry) Yang"
+	-currentpeople[4].year = "2020"
+	-currentpeople[4].majors = ["Biochemistry"]
 
 	-var pastpeople = [{"email":"khich22m"}]
 	-pastpeople[0].name = "Areeb Khichi"
@@ -113,6 +93,27 @@ block content
 	-pastpeople[3].minors = ["Statistics"]
 	-pastpeople[3].current = "Medical student"
 	
+	-pastpeople.push({"email":"malik26a"})
+	-pastpeople[4].name = "Aiza Malik"
+	-pastpeople[4].year = "2018"
+	-pastpeople[4].majors = ["Biochemistry"]
+	
+	-pastpeople.push({"email":"yan22v"})
+	-pastpeople[5].name = "Victoria Yan"
+	-pastpeople[5].year = "2018"
+	-pastpeople[5].majors = ["Chemistry"]
+	-pastpeople[5].minors = ["Philosophy"]
+	
+	-pastpeople.push({"email":"kum22y"})
+	-pastpeople[6].name = "Yeonsoo Kum"
+	-pastpeople[6].year = "2019"
+	-pastpeople[6].majors = ["Chemistry"]
+	-pastpeople[6].minors = ["Biology"]
+	
+	-pastpeople.push({"email":"yigza22b"})
+	-pastpeople[7].name = "Beth Yigzaw"
+	-pastpeople[7].year = "2019"
+	-pastpeople[7].majors = ["Biochemistry"]
 	
 	-var imgdir = "images/members/"
 	.row
