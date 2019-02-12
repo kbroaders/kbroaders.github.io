@@ -3605,20 +3605,9 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/dist/images/members/kapla26a.jpg": {
-		"ft": 16384,
-		"iS": 28668,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/dist/images/members/kapla26a.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/dist/images/members/kapla26a.JPG": {
 		"ft": 16384,
-		"iS": 71611,
+		"iS": 28668,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/dist/images/members/IMG_8375.jpg",
@@ -3761,7 +3750,7 @@
 		},
 	"/dist/images/members/windu22m.jpg": {
 		"ft": 16384,
-		"iS": 28668,
+		"iS": 2037221,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/dist/images/members/windu22m.jpg",
