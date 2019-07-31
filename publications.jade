@@ -110,8 +110,14 @@ block content
 	-publist.push({"title":"Spirocyclic acetal-modified dextran as a flexible pH-sensitive solubility switching material"})
 	-publist[14].authors = "E.T. Graham, K.E. Broaders"
 	-publist[14].journal = "Biomacromolecules"
-	-publist[14].datepage = "Just Accepted Manuscript"
+	-publist[14].datepage = "2019,20, 2008-2014"
 	-publist[14].doi = "10.1021/acs.biomac.9b00215"
+
+	-publist.push({"title":"An oxidation-sensitive dextran-based polymer with improved processability through stable boronic ester groups"})
+	-publist[15].authors = "A.J. Manaster, C. Batty, P.Tiet, A. Ooi, E.M. Bachelder, K.M. Ainslie, K.E. Broaders"
+	-publist[15].journal = "ACS Applied Bio Materials"
+	-publist[15].datepage = "Just Accepted Manuscript"
+	-publist[15].doi = ""
 
 	-var publistRev = publist.reverse()
 	.row
@@ -119,7 +125,7 @@ block content
 			.panel
 				h3 Publications
 				p
-					a(href='http://goo.gl/eiRJxt', target='_blank') Citation metrics can be found on Google Scholar.
+					a(href='https://scholar.google.com/citations?hl=en&user=MaQ0YBkAAAAJ&view_op=list_works', target='_blank') Citation metrics can be found on Google Scholar.
 				
 				ol.publist(reversed)
 					+listpubs(publistRev)

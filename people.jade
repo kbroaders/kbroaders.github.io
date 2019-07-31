@@ -12,6 +12,9 @@ mixin listpeople(people)
 							h4 #{person["name"]}
 					tr
 						td Class of #{person["year"]}
+					if person["honors"]
+						tr
+							td #{person["honors"]}
 					each major in person["majors"]
 						tr
 							td Major: #{major}
@@ -42,99 +45,129 @@ block title
 block content
 	-var currentpeople = []
 	
-	-currentpeople.push({"email":"graha22e"})
-	-currentpeople[0].name = "Emily Graham"
-	-currentpeople[0].year = "2019"
-	-currentpeople[0].majors = ["Chemistry"]
-	-currentpeople[0].nexus = ["Engineering"]
-	
-	-currentpeople.push({"email":"manas22a"})
-	-currentpeople[1].name = "Amanda Manaster"
-	-currentpeople[1].year = "2019"
-	-currentpeople[1].majors = ["Biochemistry"]
+	-var curnum = 0
 
 	-currentpeople.push({"email":"peabo22c"})
-	-currentpeople[2].name = "Catherine Peabody"
-	-currentpeople[2].year = "2020"
-	-currentpeople[2].majors = ["Biology","East Asian Studies"]
+	-currentpeople[curnum].name = "Catherine Peabody"
+	-currentpeople[curnum].year = "2020"
+	-currentpeople[curnum].majors = ["Biology","East Asian Studies"]
+	-curnum++
 
 	-currentpeople.push({"email":"yang36x"})
-	-currentpeople[3].name = "Xueyi (Sherry) Yang"
-	-currentpeople[3].year = "2020"
-	-currentpeople[3].majors = ["Biochemistry"]
+	-currentpeople[curnum].name = "Xueyi (Sherry) Yang"
+	-currentpeople[curnum].year = "2020"
+	-currentpeople[curnum].majors = ["Biochemistry"]
+	-curnum++
 	
 	-currentpeople.push({"email":"kapla26a"})
-	-currentpeople[4].name = "Abby Kaplan"
-	-currentpeople[4].year = "2021"
-	-currentpeople[4].majors = ["Chemistry"]
-	-currentpeople[4].minors = ["Gender Studies"]
+	-currentpeople[curnum].name = "Abby Kaplan"
+	-currentpeople[curnum].year = "2021"
+	-currentpeople[curnum].majors = ["Chemistry"]
+	-currentpeople[curnum].minors = ["Gender Studies"]
+	-curnum++
 	
 	-currentpeople.push({"email":"kimbe22a"})
-	-currentpeople[5].name = "Ariel Kimberley"
-	-currentpeople[5].year = "2021"
-	-currentpeople[5].majors = ["Biology, Spanish"]
+	-currentpeople[curnum].name = "Ariel Kimberley"
+	-currentpeople[curnum].year = "2021"
+	-currentpeople[curnum].majors = ["Biology, Spanish"]
+	-curnum++
 	
 	-currentpeople.push({"email":"windu22m"})
-	-currentpeople[6].name = "Maegan Windus"
-	-currentpeople[6].year = "2021"
-	-currentpeople[6].majors = ["Chemistry, Biology"]
+	-currentpeople[curnum].name = "Maegan Windus"
+	-currentpeople[curnum].year = "2021"
+	-currentpeople[curnum].majors = ["Chemistry, Biology"]
+	-curnum++
 	
 	-currentpeople.push({"email":"zheng26q"})
-	-currentpeople[7].name = "Tracy Zheng"
-	-currentpeople[7].year = "2021"
-	-currentpeople[7].majors = ["Biochemistry"]
+	-currentpeople[curnum].name = "Tracy Zheng"
+	-currentpeople[curnum].year = "2021"
+	-currentpeople[curnum].majors = ["Biochemistry"]
+	-curnum++
+	
+	-currentpeople.push({"email":"worte22r"})
+	-currentpeople[curnum].name = "Rainy Wortelboer"
+	-currentpeople[curnum].year = "2024"
+	-currentpeople[curnum].majors = ["Undecided"]
+	-curnum++
 
-	-var pastpeople = [{"email":"khich22m"}]
-	-pastpeople[0].name = "Areeb Khichi"
-	-pastpeople[0].year = "2018"
-	-pastpeople[0].majors = ["Chemistry"]
-	-pastpeople[0].minors = ["Mathematics"]
+	-var pastpeople = []
+	-var pastnum = 0
+
+	-pastpeople.push({"email":"khich22m"})
+	-pastpeople[pastnum].name = "Areeb Khichi"
+	-pastpeople[pastnum].year = "2018"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastpeople[pastnum].minors = ["Mathematics"]
+	-pastnum++
 	
 	-pastpeople.push({"email":"ooi22y"})
-	-pastpeople[1].name = "Annabelle Ooi"
-	-pastpeople[1].year = "2017"
-	-pastpeople[1].majors = ["Biology"]
-	-pastpeople[1].minors = ["Chemistry"]
-	
+	-pastpeople[pastnum].name = "Annabelle Ooi"
+	-pastpeople[pastnum].year = "2017"
+	-pastpeople[pastnum].majors = ["Biology"]
+	-pastpeople[pastnum].minors = ["Chemistry"]
+	-pastnum++
+		
 	-pastpeople.push({"email":"norri22k"})
-	-pastpeople[2].name = "Kristyn Norris"
-	-pastpeople[2].year = "2016"
-	-pastpeople[2].majors = ["Biochemistry"]
-	-pastpeople[2].current = "Ph.D. Student at UMass Worcester"
-	
+	-pastpeople[pastnum].name = "Kristyn Norris"
+	-pastpeople[pastnum].year = "2016"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastpeople[pastnum].current = "Ph.D. Student at UMass Worcester"
+	-pastnum++
+		
 	-pastpeople.push({"email":"long24j"})
-	-pastpeople[3].name = "Jackie Long"
-	-pastpeople[3].year = "2016"
-	-pastpeople[3].majors = ["Biochemistry"]
-	-pastpeople[3].minors = ["Statistics"]
-	-pastpeople[3].current = "Medical student"
+	-pastpeople[pastnum].name = "Jackie Long"
+	-pastpeople[pastnum].year = "2016"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastpeople[pastnum].minors = ["Statistics"]
+	-pastpeople[pastnum].current = "Medical student"
+	-pastnum++
 	
 	-pastpeople.push({"email":"malik26a"})
-	-pastpeople[4].name = "Aiza Malik"
-	-pastpeople[4].year = "2018"
-	-pastpeople[4].majors = ["Biochemistry"]
+	-pastpeople[pastnum].name = "Aiza Malik"
+	-pastpeople[pastnum].year = "2018"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastnum++
 	
 	-pastpeople.push({"email":"yan22v"})
-	-pastpeople[5].name = "Victoria Yan"
-	-pastpeople[5].year = "2018"
-	-pastpeople[5].majors = ["Chemistry"]
-	-pastpeople[5].minors = ["Philosophy"]
+	-pastpeople[pastnum].name = "Victoria Yan"
+	-pastpeople[pastnum].year = "2018"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastpeople[pastnum].minors = ["Philosophy"]
+	-pastnum++
 	
 	-pastpeople.push({"email":"kum22y"})
-	-pastpeople[6].name = "Yeonsoo Kum"
-	-pastpeople[6].year = "2019"
-	-pastpeople[6].majors = ["Chemistry"]
-	-pastpeople[6].minors = ["Biology"]
+	-pastpeople[pastnum].name = "Yeonsoo Kum"
+	-pastpeople[pastnum].year = "2019"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastpeople[pastnum].minors = ["Biology"]
+	-pastnum++
 	
 	-pastpeople.push({"email":"yigza22b"})
-	-pastpeople[7].name = "Beth Yigzaw"
-	-pastpeople[7].year = "2019"
-	-pastpeople[7].majors = ["Biochemistry"]
+	-pastpeople[pastnum].name = "Beth Yigzaw"
+	-pastpeople[pastnum].year = "2019"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastnum++
 	
 	-pastpeople.push({"email":"mazia22k"})
-	-pastpeople[8].name = "Kate Maziarz"
-	-pastpeople[8].year = "2018"
-	-pastpeople[8].majors = ["Chemistry"]
+	-pastpeople[pastnum].name = "Kate Maziarz"
+	-pastpeople[pastnum].year = "2018"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"graha22e"})
+	-pastpeople[pastnum].name = "Emily Graham"
+	-pastpeople[pastnum].year = "2019"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastpeople[pastnum].nexus = ["Engineering"]
+	-pastpeople[pastnum].honors = ["Summa Cum Laude"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"manas22a"})
+	-pastpeople[pastnum].name = "Amanda Manaster"
+	-pastpeople[pastnum].year = "2019"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastpeople[pastnum].honors = ["High Honor"]
+	-pastnum++
 	
 	-var imgdir = "images/members/"
 	.row
@@ -154,13 +187,11 @@ block content
 
 				.row
 					.large-12.columns
-						.panel
-							h4 Where we're from:
-							#membermap.text-center
-								img(src= imgdir+'map.jpg')
-							.text-center
-								p
-									a(href='https://drive.google.com/open?id=1FO7Hhr06G513SwHSnJDyo84bnac&usp=sharing&z=2', target='_blank') 
-										| Explore the map
+						.mapbox
+							.panel
+								p Explore where we're from! &emsp; #[span(style="color:blue") &#9679;]&nbsp;=&nbsp;current&nbsp;members &emsp; #[span(style="color:gray") &#9679;]&nbsp;=&nbsp;past&nbsp;members
+								#membermap.text-center
+									.iframe-container
+										iframe(src="https://www.google.com/maps/d/u/1/embed?mid=1FO7Hhr06G513SwHSnJDyo84bnac&ll=19.699752809880472%2C7.778681017870156&z=2")
 											
 									
