@@ -5,18 +5,19 @@ block vars
 
 mixin listpubs(pubs)
 	each pub,index in pubs
+		hr
 		li
 			a(href='https://doi.org/'+pub["doi"], target="_blank") #{pub["title"]}
 			br
 			|  !{pub["authors"]}. 
 			em #{pub["journal"]}
 			| , #{pub["datepage"]}. 
-			| [
-			a(href="/pdf/"+(pubs.length-index)+".pdf", target="_blank") PDF
-			| ]
 			.toc
 				img(src="images/pubs/toc"+(pubs.length-index)+".gif", height="150")
-
+			//| [
+			//a(href="/pdf/"+(pubs.length-index)+".pdf", target="_blank") PDF
+			//| ]
+            
 block title
 	title Publications
 	meta(name='description',content='A complete list of publications by Kyle Broaders and his lab.')
@@ -113,11 +114,11 @@ block content
 	-publist[14].datepage = "2019,20, 2008-2014"
 	-publist[14].doi = "10.1021/acs.biomac.9b00215"
 
-	-publist.push({"title":"An oxidation-sensitive dextran-based polymer with improved processability through stable boronic ester groups"})
+	-publist.push({"title":"Oxidation-Sensitive Dextran-Based Polymer with Improved Processability through Stable Boronic Ester Groups"})
 	-publist[15].authors = "A.J. Manaster, C. Batty, P.Tiet, A. Ooi, E.M. Bachelder, K.M. Ainslie, K.E. Broaders"
 	-publist[15].journal = "ACS Applied Bio Materials"
-	-publist[15].datepage = "Just Accepted Manuscript"
-	-publist[15].doi = ""
+	-publist[15].datepage = "Article ASAP"
+	-publist[15].doi = "10.1021/acsabm.9b00399"
 
 	-var publistRev = publist.reverse()
 	.row
@@ -126,6 +127,8 @@ block content
 				h3 Publications
 				p
 					a(href='https://scholar.google.com/citations?hl=en&user=MaQ0YBkAAAAJ&view_op=list_works', target='_blank') Citation metrics can be found on Google Scholar.
-				
+					| &emsp;Reprints availble upon request by 
+					a(href='mailto:broaders@mtholyoke.edu') email
+					| .
 				ol.publist(reversed)
 					+listpubs(publistRev)
