@@ -3742,10 +3742,21 @@
 		},
 	"/dist/images/cycle.jpg": {
 		"ft": 16384,
-		"iS": 138930,
+		"iS": 182201,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/dist/images/cycle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/dist/images/cycle.old.jpg": {
+		"ft": 16384,
+		"iS": 138930,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/images/cycle.old.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -3926,13 +3937,13 @@
 		},
 	"/dist/images/members/kuehn22e.jpg": {
 		"ft": 16384,
-		"iS": 28668,
+		"iS": 85078,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/dist/images/members/kuehn22e.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/dist/images/members/kum22y.jpg": {
@@ -4047,13 +4058,13 @@
 		},
 	"/dist/images/members/windu22m.jpg": {
 		"ft": 16384,
-		"iS": 2037221,
+		"iS": 0,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/dist/images/members/windu22m.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/dist/images/members/worte22r.jpg": {
@@ -4685,6 +4696,14 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/resources/cycleV3.ai",
+		"oF": 0
+		},
+	"/resources/cycleV4.ai": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/resources/cycleV4.ai",
 		"oF": 0
 		},
 	"/resources/img-multicellularity.ai": {
