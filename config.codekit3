@@ -3742,7 +3742,7 @@
 		},
 	"/dist/images/cycle.jpg": {
 		"ft": 16384,
-		"iS": 387477,
+		"iS": 138930,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/dist/images/cycle.jpg",
@@ -3753,7 +3753,7 @@
 		},
 	"/dist/images/cycleSmall.jpg": {
 		"ft": 16384,
-		"iS": 132046,
+		"iS": 84833,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/dist/images/cycleSmall.jpg",
@@ -4663,12 +4663,28 @@
 		"oAP": "/resources/cycleSmall.ai",
 		"oF": 0
 		},
+	"/resources/cycleSmallV2.ai": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/resources/cycleSmallV2.ai",
+		"oF": 0
+		},
 	"/resources/cycleV2.ai": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/resources/cycleV2.ai",
+		"oF": 0
+		},
+	"/resources/cycleV3.ai": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/resources/cycleV3.ai",
 		"oF": 0
 		},
 	"/resources/img-multicellularity.ai": {
