@@ -4471,6 +4471,14 @@
 		"oAP": "/dist/pdf/9.pdf",
 		"oF": 0
 		},
+	"/dist/pdf/cv.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/dist/pdf/cv.pdf",
+		"oF": 0
+		},
 	"/dist/people.html": {
 		"cB": 0,
 		"ft": 8192,
