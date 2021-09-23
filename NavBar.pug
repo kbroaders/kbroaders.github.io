@@ -1,0 +1,92 @@
+.row
+	.large-12.columns
+		.logowrapper
+			if pageid == "home"
+				.homelogo
+					a.disabled
+						.show-for-medium-up
+							h1 — Broaders Lab —
+						.hide-for-medium-up
+							h2 Broaders Lab
+			else
+				.homelogo
+					a(href='index.html')
+						.show-for-medium-up
+							h1 — Broaders Lab —
+						.hide-for-medium-up
+							h2 Broaders Lab
+		.navbottom
+			hr
+if pageid== "home"
+	.row
+		.large-12.columns.text-center
+			.show-for-medium-up
+				img(src= 'images/cycle.jpg')
+			.hide-for-medium-up
+				img(src= 'images/cycleSmall.jpg')
+			.navimgbottom
+				hr
+.row
+	.large-12.columns
+		.show-for-medium-up.text-center
+			ul.button-group.navgroup
+				li
+					if pageid == "research"
+						a.small.navbutton.disabled
+							.bigletter Re
+							| Research
+					else
+						a.small.navbutton(href='research.html')
+							.bigletter Re
+							| Research
+				li
+					if pageid == "publications"
+						a.small.navbutton.disabled
+							.bigletter Pb
+							| Publications
+					else
+						a.small.navbutton(href='publications.html')
+							.bigletter Pb
+							| Publications
+				li
+					if pageid == "people"
+						a.small.navbutton.disabled
+							.bigletter La
+							| Lab Members
+					else
+						a.small.navbutton(href='people.html')
+							.bigletter La
+							| Lab Members
+				li
+					if pageid == "kb"
+						a.small.navbutton.disabled
+							.bigletter Br
+							| Kyle Broaders
+					else
+						a.small.navbutton(href='kb.html')
+							.bigletter Br
+							| Kyle Broaders
+
+		.hide-for-medium-up
+			ul.button-group.navgroup
+				
+				li
+					if pageid == "research"
+						a.tiny.navbutton.disabled Research
+					else
+						a.tiny.navbutton(href='research.html') Research
+				li
+					if pageid == "publications"
+						a.tiny.navbutton.disabled Papers
+					else
+						a.tiny.navbutton(href='publications.html') Papers
+				li
+					if pageid == "people"
+						a.tiny.navbutton.disabled Lab
+					else
+						a.tiny.navbutton(href='people.html') Lab
+				li
+					if pageid == "kb"
+						a.tiny.navbutton.disabled Broaders
+					else
+						a.tiny.navbutton(href='kb.html') Broaders

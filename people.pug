@@ -1,0 +1,218 @@
+extends layout
+
+mixin listpeople(people)
+	each person in people
+		.panel.personbox
+			.columns.headshot
+				img(src= imgdir+person["email"]+'.jpg')
+			.columns.text-left
+				table.vcard
+					tr
+						td
+							h4 #{person["name"]}
+					tr
+						td Class of #{person["year"]}
+					if person["honors"]
+						tr
+							td #{person["honors"]}
+					each major in person["majors"]
+						tr
+							td Major: #{major}
+					if person["minors"]
+						each minor in person["minors"]
+							tr
+								td Minor: #{minor}
+					if person["nexus"]
+						each nexus in person["nexus"]
+							tr
+								td Nexus: #{nexus}
+					if person["current"]
+						tr
+							td Currently: #{person["current"]}
+					tr
+						td 
+							a(href='mailto:'+person["email"]+'@mtholyoke.edu') #{person["email"]}@mtholyoke.edu
+
+
+
+block vars
+	-var pageid = "people"
+
+block title
+	title People
+	meta(name='description',content='Members, past and present, of the Broaders lab.')
+
+block content
+	-var currentpeople = []
+	
+	-var curnum = 0
+	
+	-currentpeople.push({"email":"kuehn22e"})
+	-currentpeople[curnum].name = "Liz Kuehne"
+	-currentpeople[curnum].year = "2022"
+	-currentpeople[curnum].majors = ["Chemistry"]
+	-curnum++
+	
+	-currentpeople.push({"email":"haske22i"})
+	-currentpeople[curnum].name = "Isabela Haskell"
+	-currentpeople[curnum].year = "2023"
+	-currentpeople[curnum].majors = ["Biochemistry"]
+	-curnum++
+	
+
+	-var pastpeople = []
+	-var pastnum = 0
+
+	-pastpeople.push({"email":"khich22m"})
+	-pastpeople[pastnum].name = "Areeb Khichi"
+	-pastpeople[pastnum].year = "2018"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastpeople[pastnum].minors = ["Mathematics"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"ooi22y"})
+	-pastpeople[pastnum].name = "Annabelle Ooi"
+	-pastpeople[pastnum].year = "2017"
+	-pastpeople[pastnum].majors = ["Biology"]
+	-pastpeople[pastnum].minors = ["Chemistry"]
+	-pastnum++
+		
+	-pastpeople.push({"email":"norri22k"})
+	-pastpeople[pastnum].name = "Kristyn Norris"
+	-pastpeople[pastnum].year = "2016"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastnum++
+		
+	-pastpeople.push({"email":"long24j"})
+	-pastpeople[pastnum].name = "Jackie Long"
+	-pastpeople[pastnum].year = "2016"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastpeople[pastnum].minors = ["Statistics"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"malik26a"})
+	-pastpeople[pastnum].name = "Aiza Malik"
+	-pastpeople[pastnum].year = "2018"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"yan22v"})
+	-pastpeople[pastnum].name = "Victoria Yan"
+	-pastpeople[pastnum].year = "2018"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastpeople[pastnum].minors = ["Philosophy"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"kum22y"})
+	-pastpeople[pastnum].name = "Yeonsoo Kum"
+	-pastpeople[pastnum].year = "2019"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastpeople[pastnum].minors = ["Biology"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"yigza22b"})
+	-pastpeople[pastnum].name = "Beth Yigzaw"
+	-pastpeople[pastnum].year = "2019"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"mazia22k"})
+	-pastpeople[pastnum].name = "Kate Maziarz"
+	-pastpeople[pastnum].year = "2018"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"graha22e"})
+	-pastpeople[pastnum].name = "Emily Graham"
+	-pastpeople[pastnum].year = "2019"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastpeople[pastnum].nexus = ["Engineering"]
+	-pastpeople[pastnum].honors = ["Summa Cum Laude"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"manas22a"})
+	-pastpeople[pastnum].name = "Amanda Manaster"
+	-pastpeople[pastnum].year = "2019"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastpeople[pastnum].honors = ["High Honor"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"worte22r"})
+	-pastpeople[pastnum].name = "Rainy Wortelboer"
+	-pastpeople[pastnum].year = "2020"
+	-pastpeople[pastnum].majors = ["Highschool"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"kimbe22a"})
+	-pastpeople[pastnum].name = "Ariel Kimberley"
+	-pastpeople[pastnum].year = "2021"
+	-pastpeople[pastnum].majors = ["Biology, Spanish"]
+	-pastnum++
+
+	-pastpeople.push({"email":"peabo22c"})
+	-pastpeople[pastnum].name = "Catherine Peabody"
+	-pastpeople[pastnum].year = "2020"
+	-pastpeople[pastnum].majors = ["Biology","East Asian Studies"]
+	-pastnum++
+
+	-pastpeople.push({"email":"yang36x"})
+	-pastpeople[pastnum].name = "Xueyi (Sherry) Yang"
+	-pastpeople[pastnum].year = "2020"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastpeople[pastnum].honors = ["High Honor"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"kapla26a"})
+	-pastpeople[pastnum].name = "Abby Kaplan"
+	-pastpeople[pastnum].year = "2021"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastpeople[pastnum].minors = ["Gender Studies"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"windu22m"})
+	-pastpeople[pastnum].name = "Maegan Windus"
+	-pastpeople[pastnum].year = "2021"
+	-pastpeople[pastnum].majors = ["Chemistry","Biology"]
+	-pastpeople[pastnum].honors = ["High Honor"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"zheng26q"})
+	-pastpeople[pastnum].name = "Tracy Zheng"
+	-pastpeople[pastnum].year = "2021"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"long24m"})
+	-pastpeople[pastnum].name = "Monich Long"
+	-pastpeople[pastnum].year = "2022"
+	-pastpeople[pastnum].majors = ["Highschool"]
+	-pastnum++
+	
+	-pastpeople.reverse()
+	
+	-var imgdir = "images/members/"
+	.row
+		.large-12.columns.biolist
+			dl.accordion(data-accordion="")
+				dd.accordion-navigation.active
+					a(href="#panel1") Current Members
+					#panel1.content.active(style="display:block")
+						
+						+listpeople(currentpeople)
+
+				dd.accordion-navigation
+					a(href="#panel2") Past Members
+					#panel2.content
+						.pastpeople
+							+listpeople(pastpeople)
+
+				.row
+					.large-12.columns
+						.mapbox
+							.panel
+								p Explore where we're from! &emsp; #[span(style="color:blue") &#9679;]&nbsp;=&nbsp;current&nbsp;members &emsp; #[span(style="color:gray") &#9679;]&nbsp;=&nbsp;past&nbsp;members
+								#membermap.text-center
+									.iframe-container
+										iframe(src="https://www.google.com/maps/d/u/1/embed?mid=1FO7Hhr06G513SwHSnJDyo84bnac&ll=19.699752809880472%2C7.778681017870156&z=2")
+											
+									
