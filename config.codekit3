@@ -9,14 +9,6 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
-    "\/.gitignore" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/.gitignore",
-      "oF" : 0
-    },
     "\/bower_components\/fastclick\/.bower.json" : {
       "ft" : 524288,
       "oA" : 2,
