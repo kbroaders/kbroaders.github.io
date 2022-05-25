@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head>
+    <title>MHC Evaluation Saver</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <style>
+		#pagewrapper{
+			max-width:800px;
+			margin: 3em auto;
+		}
+		h1 { color: #111;
+			font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+			font-size: 3em; 
+			font-weight: bold; 
+			text-align: center; 
+			margin-bottom:0.5em;
+		}
+		p { color: #222; 
+			font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+			font-size: 1.1em;
+			line-height: 1.2em; 
+			margin: 0 0 0.75em 2em; 
+			text-align: left;
+		}
+		.center{text-align:center;}
+		#inputarea{
+			display:inline-block;
+			margin:1em 1em 1em 1em;
+		}
+		.downloader {
+			width:100%;
+		 	background-color: white;
+		  	color: black;
+		  	border: 2px solid #555555;
+		    padding: 16px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    transition-duration: 0.4s;
+		    cursor: pointer;
+		}
+
+		.downloader:hover {
+		  	background-color: #555555;
+		  	color: white;
+		}
+		.smalltext{
+			font-size:.75em;
+			margin-top:1em;
+		}
+    </style>
+  </head>
+  <body>
+	<div id="pagewrapper">
+		<h1>MHC Evaluation Saver</h1>
+		<p>I find it difficult to read and compare course evaluations over time or by category, so I keep all of my evaluations in a single spreadsheet with added columns for year, semester, and course. This allows me to filter by course number or year, and lets me read through individual categories sequentially.</p>
+		<p>I wrote this tool to automate much of the process. It converts the text available through my.mtholyoke into a downloadable tab-separated-values (tsv) file, which can be opened in Microsoft Excel or any similar spreadsheet software.</p><p>All processing is done by the browser, and no information is sent to any external service. Feel free to use, remix, and distribute as you like.</p>
+		<div class="center">
+			<div id="inputarea">
+				<textarea cols="80" rows="20" id="evals" placeholder="Paste evaluations text here.&#13;&#13;Can process any number of evalutions, and tolerates unrelated text including header sections and declined evaluations."></textarea>
+				<br>
+				<button class="downloader" onclick="evalstoTSV()">Download evaluations</button>
+			</div>
+		</div>
+		<div class="smalltext">
+			<p>Made for personal use by Kyle Broaders, 2020. Your mileage may vary.</p>
+			<p>Requires JavaScript functions not implemented in some browsers.
+				<br>Tested and working in Chrome 85 and FireFox 79. Will not work in Safari 13.1 or Internet Explorer.</p>
+		</div>
+	</div>
+    <script>
+				
+		/*
+		 *  Copyright (c) 2020 Kyle Broaders, <broaders@mtholyoke.edu>
+		 *  
+		 *  Permission is hereby granted, free of charge, to any person obtaining a copy
+		 *  of this software and associated documentation files (the "Software"), to deal
+		 *  in the Software without restriction, including without limitation the rights
+		 *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+		 *  copies of the Software, and to permit persons to whom the Software is
+		 *  furnished to do so, subject to the following conditions:
+		 *  
+		 *  The above copyright notice and this permission notice shall be included in all
+		 *  copies or substantial portions of the Software.
+		 *  
+		 *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+		 *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+		 *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+		 *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+		 *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+		 *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+		 *  SOFTWARE.
+		 */
+		
+		
+		//Takes input string with evaluations and returns a 2D array of arrays containing evals
+		function extractReviews(input){
+						
+			// Define evaluation components using regular expressions.
+			// Each relies on lookbehind patterns, which are part of ES2018, so will only work on modern browsers
+			const re_evnum=/(?<=Evaluation Number: )\d{5,}(?=\s)(?!\s*I)/g;  // Only matches if a review follows
+			const re_evteach=/(?<=be useful.\s*).+(?=\s*Please)/g;
+			const re_eveff=/(?<=into it.\s*).+(?=\s*Discuss)/g;
+			const re_evduty=/(?<=especially helpful.\s*).+(?=\s*Please assess)/g;
+			const re_evmat=/(?<=projects, etc.\s*).+(?=\s*What were)/g;
+			const re_interest=/(?<=that apply.\s*).+(?=\s*Select your)/g;
+			const re_grade=/(?<=the course:\s*)[ABCDF][+-]?/g;
+			
+			// Use RegEx from above to make table of data
+			var data=[]; // empty array
+			data.push(input.match(re_evnum));    // add numbers
+			data.push(input.match(re_evteach));  // add evaluation of teaching
+			data.push(input.match(re_eveff));    // add evaluation of effort
+			data.push(input.match(re_evduty));   // add evaluation of performing duties
+			data.push(input.match(re_evmat));    // add evaluation of course materials
+			data.push(input.match(re_interest)); // add note about reason for taking course
+			data.push(input.match(re_grade));    // add expected grade
+			
+			/*
+			 * Neat one liner to transpose the array from stack overflow: 
+			 * https://stackoverflow.com/questions/17428587/transposing-a-2d-array-in-javascript
+			 * 
+			 */
+			
+			transpose = m => m[0].map((x,i) => m.map(x => x[i]));
+
+			// Checks that there are the same number of each evaluation category
+			if (!data.map(row=>row.length).every((row, _, rows)=> rows[0] === row)){
+				alert("Something went wrong parsing the evaluations. Make sure to copy in only full evaluations.");
+				return;
+			}
+						
+			try{
+				return transpose(data);
+			}catch (e){
+				alert("Something went wrong parsing the evaluations. Make sure to copy in only full evaluations.")
+			}
+		}
+		
+		/*
+		 * Encodes the 2D array for download, then downloads through a hidden link.
+		 * Taken from stack overflow:
+		 * https://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side
+		 *
+		 */
+		
+		function downloadTSV(arrayin){
+			let tsvContent = "data:text/tsv;charset=utf-8,";// Header for a tsv document
+			
+			// Read through each row of the arrayin and add to tsvContent with appropriate separators
+			arrayin.forEach(
+				function(rowArray) {
+			    	let row = rowArray.join("\t"); 			// Put tab between each entry in a row
+			   	 	tsvContent += row + "\r\n"; 			// Add as a line to growing tsvContent
+				}
+			);
+        	
+			var encodedUri = encodeURI(tsvContent);			// Encodes most special characters as UTF-8
+			encodedUri = encodedUri.replaceAll('#','%23');	// Converts # to unicode too
+			var link = document.createElement("a");			// Make an invisible link that will allow download
+			link.setAttribute("href", encodedUri);			// Makes the evaluations the text of a very long link
+			link.setAttribute("download", "evals.tsv");		// Gives a download a filename
+			document.body.appendChild(link); 				// Required for Firefox, adds the link to the bottom of the page
+        	
+			link.click();									// Click the link to initiate the download
+		}
+		
+		// This function is called by the HTML above and executes the extraction and download functions
+		
+		function evalstoTSV(){
+            var text_input = document.getElementById("evals");	// Grab textbox
+			var raw_evals = text_input.value;					// Get text from textbox
+			var evalarr = extractReviews(raw_evals);			// Turn text into array of evaluations
+			if (evalarr !== undefined){
+				downloadTSV(evalarr);							// Convert to TSV and download
+			}
+		}
+    </script>
+  </body>
+</html>
