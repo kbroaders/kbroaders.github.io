@@ -3858,6 +3858,30 @@
       "oAP" : "\/dist\/humans.txt",
       "oF" : 0
     },
+    "\/dist\/illustrator\/Illustrator FixFigs.ai" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/illustrator\/Illustrator FixFigs.ai",
+      "oF" : 0
+    },
+    "\/dist\/illustrator\/IllustratorIntro.pptx" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/illustrator\/IllustratorIntro.pptx",
+      "oF" : 0
+    },
+    "\/dist\/illustrator\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/illustrator\/index.html",
+      "oF" : 0
+    },
     "\/dist\/images\/cycle.jpg" : {
       "ft" : 16384,
       "iS" : 182201,
@@ -4115,6 +4139,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/dist\/images\/members\/kawas22i.jpg" : {
+      "ft" : 16384,
+      "iS" : 141202,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/images\/members\/kawas22i.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/dist\/images\/members\/khich22m.jpg" : {
       "ft" : 16384,
       "iS" : 5859,
@@ -4290,6 +4327,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/images\/members\/peabo22c.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/dist\/images\/members\/peng23x.jpg" : {
+      "ft" : 16384,
+      "iS" : 120395,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/images\/members\/peng23x.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -4843,6 +4893,14 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/dist\/teachingevaluations.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/teachingevaluations.html",
+      "oF" : 0
     },
     "\/index.html" : {
       "cB" : 0,
