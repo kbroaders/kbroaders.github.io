@@ -28,7 +28,7 @@ h1 { color: #111;
 h2 { color: #111; 
 	font-family: 'Open Sans', sans-serif; 
 	font-size: 2em; font-weight: 300; 
-	margin:0em;
+	margin-bottom:0.3em;
 	text-align: center; }
 h3 { color: #111; 
 	font-family: 'Open Sans', sans-serif; 
@@ -50,6 +50,7 @@ p { color: #222;
 .wrapper {
 	max-width:800px;
 	color:#111;
+	margin-left:15%;
 }
 a {
 	 text-decoration:underline dotted;
