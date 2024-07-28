@@ -17,6 +17,10 @@ details[open] {
 details[open] summary {
 }
 
+img{
+	margin:1em 0em;
+}
+
 .infobox {
 	background:#deebf7;
 	border-radius:.5em;
@@ -24,7 +28,11 @@ details[open] summary {
 	margin:1em 3em;
 }
 
+strong{
+	font-size:1.3em;
+	margin-right:0.5em;
 
+}
 
 .cautionbox{
 	background:#ffeda0;
@@ -71,7 +79,7 @@ h4 { color: #111;
 p { color: #222; 
 	font-family: 'Helvetica Neue', sans-serif; 
 	font-size: 1.25em; line-height: 24px; 
-	margin: 0 0 0.5em 2em; 
+	margin: 0.5em 0 1em 2em; 
 	text-align: left;
 }
 .wrapper {

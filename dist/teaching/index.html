@@ -9,23 +9,25 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<!-- directives:[] -->
 			<div id="content">
 				<h1>
 					Alternative Grading Tools
 				</h1>
 				<p>
-					A temporary repository for teaching materials I use for classes with alternative grading.
+					A repository for teaching materials I use for classes with alternative grading. Even if they cannot be directly used in your teaching, I hope that they can provide inspiration or a starting point for your own alternative grading journey.
 				</p>
 				<p>
-					Please direct questions, concerns, or suggestions to <a href="mailto:broaders@mtholyoke.edu">broaders@mtholyoke.edu</a>.
+					Please direct questions, concerns, or suggestions to Kyle Broaders (<a href="mailto:broaders@mtholyoke.edu">broaders@mtholyoke.edu</a>).
 				</p>
 				<hr>
 				<h2 id="gradebooks">
 					Gradebooks
 				</h2>
 				<p>
-					Below are example Google Sheets that I have used to implement mastery- and labor-based grade record-keeping and sharing. Suggestions for use are embedded in the <code>Instructions</code> sheet. Use them directly or as a starting point for building your own system.<br>
+					Below are example Google Sheets that I have used to implement mastery- and labor-based grade record-keeping and sharing. Suggestions for use are embedded in the <code>Instructions</code> sheet. Use them directly or as a starting point for building your own system.
+				</p>
+				<p>
+					An important caveat for the sharing features of these gradebooks is that they require your students to have Google accounts. For security reasons, I would only recommend sharing using this system if your campus has an instutitional Google Workspaces.
 				</p>
 				<h3>
 					<a href="https://docs.google.com/spreadsheets/d/1w2BBfDVhZ8lqioZywGdwvWosFGyseLR6Q-bUta7AXas/edit?usp=sharing">Mastery Grading Gradebook</a>
@@ -40,17 +42,17 @@
 				</h3>
 				<p>
 					<img src="labor-grading-schematic.png" style="width:100%"><br>
-					<a href="https://docs.google.com/spreadsheets/d/19VyeGGBh-eXG3k3794D3wWAH15A9bMkkhLoFdEKZtxw/edit?usp=sharing">This spreadsheet</a> coordinates student information with a labor-based flavor of specifications grading. As above, it supports making a sheet for each student that gives an overview of their progress and supports sharing to a separate document via <code>IMPORTRANGE</code>. If you want to build your own version, <a href="https://docs.google.com/spreadsheets/d/1gYwCTkgANgMBpqEOQTutxOLCj_4qFrDqNj9INxszYMg/edit?usp=sharing">here is a mostly blank version</a> with student sheets and example data deleted.
+					<a href="https://docs.google.com/spreadsheets/d/19VyeGGBh-eXG3k3794D3wWAH15A9bMkkhLoFdEKZtxw/edit?usp=sharing">This spreadsheet</a> coordinates student information with a labor-based flavor of contract grading. As above, it supports making a sheet for each student that gives an overview of their progress and supports sharing to a separate document via <code>IMPORTRANGE</code>. If you want to build your own version, <a href="https://docs.google.com/spreadsheets/d/1gYwCTkgANgMBpqEOQTutxOLCj_4qFrDqNj9INxszYMg/edit?usp=sharing">here is a mostly blank version</a> with student sheets and example data deleted.
 				</p>
 				<hr>
 				<div class="infobox">
 					<p>
-						<strong>Note:</strong> Hand-duplicating a copy of the <code>Template</code> sheet for each student is reasonable for small classes, but becomes onerous with larger classes. There is a script under Extensions → Google Apps Script that can duplicate within the instructor sheet as well as making the individual spreadsheets with the appropriate <code>IMPORTRANGE()</code> statement.
+						<strong style="color:rgb(0, 116, 249)">Note:</strong> Hand-duplicating a copy of the <code>Template</code> sheet for each student is reasonable for small classes, but becomes onerous with larger classes. There is a script under Extensions → Apps Script that can duplicate within the instructor sheet as well as making the individual spreadsheets with the appropriate <code>IMPORTRANGE()</code> statement.
 					</p>
 				</div>
 				<div class="cautionbox">
 					<p>
-						<strong>Warning!</strong> Exercise caution executing scripts! I recommend reading the script (<a href="https://github.com/kbroaders/Google-Sheets-Gradebooks">also available on Github</a>) to make sure you know what it does before running anything. For most users, the only functions to execute are <code>makeStudentSheets()</code> and <code>makeIndividualSpreadsheets()</code>.
+						<strong style="color:rgb(249, 116, 0)">Warning!</strong> Exercise caution executing scripts! I recommend reading the script (<a href="https://github.com/kbroaders/Google-Sheets-Gradebooks">also available on Github</a>) to make sure you know what it does before running anything. For most users, the only functions to execute are <code>makeStudentSheets()</code> and <code>makeIndividualSpreadsheets()</code>.
 					</p>
 				</div>
 				<hr>
