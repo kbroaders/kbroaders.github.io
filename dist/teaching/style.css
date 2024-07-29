@@ -79,13 +79,13 @@ h4 { color: #111;
 p { color: #222; 
 	font-family: 'Helvetica Neue', sans-serif; 
 	font-size: 1.25em; line-height: 24px; 
-	margin: 0.5em 0 1em 2em; 
+	margin: 0.5em 1em 1em 2em; 
 	text-align: left;
 }
 .wrapper {
 	max-width:800px;
 	color:#111;
-	margin-left:15%;
+	margin:auto;
 }
 a {
 	 text-decoration:underline dotted;
