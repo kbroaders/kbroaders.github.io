@@ -14,7 +14,8 @@ mixin listpeople(people)
 						td Class of #{person["year"]}
 					if person["honors"]
 						tr
-							td #{person["honors"]}
+							td 
+								strong #{person["honors"]}
 					each major in person["majors"]
 						tr
 							td Major: #{major}
@@ -48,29 +49,7 @@ block content
 	-var curnum = 0
 	
 	
-	-currentpeople.push({"email":"kawas22i"})
-	-currentpeople[curnum].name = "Illia Kawash-Cooper"
-	-currentpeople[curnum].year = "2025"
-	-currentpeople[curnum].majors = ["Chemistry"]
-	-curnum++
-	
-	-currentpeople.push({"email":"peng23x"})
-	-currentpeople[curnum].name = "Xinran (Ran) Peng"
-	-currentpeople[curnum].year = "2025"
-	-currentpeople[curnum].majors = ["Biochemistry"]
-	-curnum++
-	
-	-currentpeople.push({"email":"pollo23n"})
-	-currentpeople[curnum].name = "Natalia Pollock-O'Dorisio"
-	-currentpeople[curnum].year = "2025"
-	-currentpeople[curnum].majors = ["Chemistry"]
-	-curnum++
-	
-	-currentpeople.push({"email":"bowde22a"})
-	-currentpeople[curnum].name = "Abby Bowden"
-	-currentpeople[curnum].year = "2025"
-	-currentpeople[curnum].majors = ["Chemistry"]
-	-curnum++
+
 
 	-currentpeople.push({"email":"afriy22d"})
 	-currentpeople[curnum].name = "Davida Afriyie"
@@ -105,6 +84,12 @@ block content
 	-currentpeople.push({"email":"frase25m"})
 	-currentpeople[curnum].name = "Max Fraser"
 	-currentpeople[curnum].year = "2027"
+	-currentpeople[curnum].majors = ["Chemistry"]
+	-curnum++
+	
+	-currentpeople.push({"email":"mccor23e"})
+	-currentpeople[curnum].name = "Emmy McCormack"
+	-currentpeople[curnum].year = "2026"
 	-currentpeople[curnum].majors = ["Chemistry"]
 	-curnum++
 	 
@@ -281,6 +266,33 @@ block content
 	-pastpeople[pastnum].name = "Mariana Crisanto"
 	-pastpeople[pastnum].year = "2024"
 	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"kawas22i"})
+	-pastpeople[pastnum].name = "Illia Kawash-Cooper"
+	-pastpeople[pastnum].year = "2025"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastpeople[pastnum].honors = ["Summa Cum Laude"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"peng23x"})
+	-pastpeople[pastnum].name = "Xinran (Ran) Peng"
+	-pastpeople[pastnum].year = "2025"
+	-pastpeople[pastnum].majors = ["Biochemistry"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"pollo23n"})
+	-pastpeople[pastnum].name = "Natalia Pollock-O'Dorisio"
+	-pastpeople[pastnum].year = "2025"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastpeople[pastnum].honors = ["High Honor"]
+	-pastnum++
+	
+	-pastpeople.push({"email":"bowde22a"})
+	-pastpeople[pastnum].name = "Abby Bowden"
+	-pastpeople[pastnum].year = "2025"
+	-pastpeople[pastnum].majors = ["Chemistry"]
+	-pastpeople[pastnum].honors = ["High Honor"]
 	-pastnum++
 	
 	-pastpeople.reverse()

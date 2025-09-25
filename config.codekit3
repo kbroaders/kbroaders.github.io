@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34564",
   "files" : {
+    "\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/.gitignore",
+      "oF" : 0
+    },
     "\/bower_components\/fastclick\/.bower.json" : {
       "ft" : 524288,
       "oA" : 2,
@@ -4634,6 +4642,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/dist\/images\/members\/mccor23e.jpg" : {
+      "ft" : 16384,
+      "iS" : 28668,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/images\/members\/mccor23e.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/dist\/images\/members\/munro22g.jpg" : {
       "ft" : 16384,
       "iS" : 28668,
@@ -5464,6 +5485,38 @@
       "oAP" : "\/dist\/people.html",
       "oF" : 2,
       "oS" : 0
+    },
+    "\/private\/archived-hits-Teaching Resources by Kyle Broaders-2024-07.csv" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/private\/archived-hits-Teaching Resources by Kyle Broaders-2024-07.csv",
+      "oF" : 0
+    },
+    "\/private\/archived-hits-Teaching Resources by Kyle Broaders-2024-08.csv" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/private\/archived-hits-Teaching Resources by Kyle Broaders-2024-08.csv",
+      "oF" : 0
+    },
+    "\/private\/archived-hits-Teaching Resources by Kyle Broaders-2024-09.csv" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/private\/archived-hits-Teaching Resources by Kyle Broaders-2024-09.csv",
+      "oF" : 0
+    },
+    "\/private\/archived-hits-Teaching Resources by Kyle Broaders-2024-10.csv" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/private\/archived-hits-Teaching Resources by Kyle Broaders-2024-10.csv",
+      "oF" : 0
     },
     "\/publications.pug" : {
       "cB" : 0,
