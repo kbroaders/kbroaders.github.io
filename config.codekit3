@@ -5162,6 +5162,14 @@
       "oAP" : "\/dist\/kb.html",
       "oF" : 0
     },
+    "\/dist\/MotD.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/MotD.html",
+      "oF" : 0
+    },
     "\/dist\/opportunities.html" : {
       "cB" : 0,
       "ft" : 8192,
